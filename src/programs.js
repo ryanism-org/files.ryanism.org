@@ -248,7 +248,7 @@ function Notepad(file_path) {
     // TODO: focus existing window if file is currently open?
 
     var $win = make_iframe_window({
-        src: "programs/notepad/index.html" + (file_path ? ("?path=" + file_path) : ""),
+        src: "programs/notepad/" + (file_path ? ("?path=" + file_path) : ""),
         icons: iconsAtTwoSizes("notepad"),
         title: win_title,
         outerWidth: 480,
@@ -261,7 +261,7 @@ Notepad.acceptsFilePaths = true;
 
 function Paint(file_path) {
     var $win = make_iframe_window({
-        src: "programs/jspaint/index.html",
+        src: "programs/jspaint/",
         icons: iconsAtTwoSizes("paint"),
         // NOTE: in Windows 98, "untitled" is lowercase, but TODO: we should just make it consistent
         title: "untitled - Paint",
@@ -451,7 +451,7 @@ function Explorer(address) {
     var win_title = document_title;
     // TODO: focus existing window if folder is currently open
     var $win = make_iframe_window({
-        src: "programs/explorer/index.html" + (address ? ("?address=" + encodeURIComponent(address)) : ""),
+        src: "programs/explorer/" + (address ? ("?address=" + encodeURIComponent(address)) : ""),
         icons: iconsAtTwoSizes("folder-open"),
         title: win_title,
         // this is based on one measurement, but it uses different sizes depending on the screen resolution,
@@ -703,12 +703,13 @@ add_icon_not_via_filesystem({
     // file_path: "/network-neighborhood/",
     is_system_folder: true,
 });
+/*
 add_icon_not_via_filesystem({
     title: "Ryan Bin",
     iconID: "recycle-bin",
     open: function() { Explorer("https://www.epa.gov/recycle/"); },
     is_system_folder: true,
-});
+});*/
 add_icon_not_via_filesystem({
     title: "Ryan Explorer",
     iconID: "internet-explorer",
