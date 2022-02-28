@@ -1,4 +1,3 @@
-
 var $textarea = $("#document-textarea");
 var $print_helper = $("#print-helper");
 
@@ -28,6 +27,7 @@ var query = parse_query_string(location.search);
 if (query.path) {
     var file_path = query.path;
     var file_name = file_name_from_path(file_path);
+    console.log(file_name);
 } else if (location.search.length > 1) {
     var local_storage_document_id = location.search.replace("?", "");
     var file_name = location.search.replace("?", "");
@@ -36,7 +36,7 @@ var default_file_name_for_title = "Untitled";
 var default_file_name_for_saving = "Untitled.txt";
 
 function update_title() {
-    document.title = (file_name || default_file_name_for_title) + " - Notepad";
+    document.title = (file_name || default_file_name_for_title) + " - Ryan-pad";
     
     if (frameElement && frameElement.$window) {
         frameElement.$window.title(document.title);
@@ -184,7 +184,7 @@ function insert_time_and_date() {
     document.execCommand("insertText", false, str);
 }
 
-var word_wrap_enabled = false;
+var word_wrap_enabled = true;
 function is_word_wrap_enabled() {
     return $textarea.css("white-space") == "pre-wrap";
 }
