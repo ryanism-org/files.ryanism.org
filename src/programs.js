@@ -589,7 +589,8 @@ var file_extension_associations = {
     rsp: Notepad,
     sh: Notepad,
     ts: Notepad,
-    txt: Notepad,
+    //TEMP FIX NOTEPAD ISSUE
+    txt: Explorer,
     vcxproj: Notepad,
     webmanifest: Notepad,
     xml: Notepad,
