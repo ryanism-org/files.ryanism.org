@@ -9,8 +9,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-        npm install
-        npm run pull-libs
+          npm install
+          npm run pull-libs
 
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
