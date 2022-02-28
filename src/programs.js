@@ -703,6 +703,13 @@ add_icon_not_via_filesystem({
     // file_path: "/network-neighborhood/",
     is_system_folder: true,
 });
+add_icon_not_via_filesystem({
+    title: "Legends",
+    iconID: "folder-legend-open",
+    open: function() { systemExecuteFile("/Legends"); },
+    // file_path: "/network-neighborhood/",
+    is_system_folder: false,
+});
 /*
 add_icon_not_via_filesystem({
     title: "Ryan Bin",

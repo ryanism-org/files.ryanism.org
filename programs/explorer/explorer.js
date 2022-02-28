@@ -369,7 +369,7 @@ async function render_folder_template(folder_view, address, eventHandlers) {
         // @TODO: load FOLDER.HTT from the folder we're showing, if it exists
         const template_file_name =
         address === "/recycle-bin/" ? "recycle.htt" :
-        address === "/desktop/Legends/" ? "LEGENDS.htt" :
+        address === "/Legends/" ? "LEGENDS.htt" :
         address === "/network-neighborhood/" ? "nethood.htt" :
         // address === "/my-computer/" ? "MYCOMP.HTT" : // I don't have a proper My Computer folder yet
         "FOLDER.HTT";
