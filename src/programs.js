@@ -603,14 +603,16 @@ var file_extension_associations = {
     gif: Paint,
     icns: Paint,
     ico: Paint,
-    jpeg: Paint,
-    jpg: Paint,
+    //TEMP JSPAINT FIX
+    jpeg: Explorer,
+    jpg: Explorer,
     kra: Paint,
     pbm: Paint,
     pdf: Paint, // yes I added PDF support to JS Paint (not all formats listed here are supported though)
     pdn: Paint,
     pgm: Paint,
-    png: Paint,
+    //TEMP JSPAINT FIX
+    png: Explorer,
     pnm: Paint,
     ppm: Paint,
     ps: Paint,
