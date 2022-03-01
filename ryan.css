@@ -1,0 +1,7 @@
+:root {
+    /* Colors */
+    --ActiveTitle: #cc1818 !important;
+    --GradientActiveTitle: #7b1bb2 !important;
+    --HotTrackingColor: #1d1bb2 !important;
+    --Background: rgba(0, 0, 0, 0.25) !important;
+}
