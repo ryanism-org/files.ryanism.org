@@ -27,7 +27,6 @@ var query = parse_query_string(location.search);
 if (query.path) {
     var file_path = query.path;
     var file_name = file_name_from_path(file_path);
-    console.log(file_name);
 } else if (location.search.length > 1) {
     var local_storage_document_id = location.search.replace("?", "");
     var file_name = location.search.replace("?", "");

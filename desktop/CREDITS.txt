@@ -1,6 +1,4 @@
-Hello! Welcome to 98.js.org
-
-https://github.com/1j01/98
+Welcome to Ryan's Computer File System.
 
 --------------------------------------
 Apps
@@ -10,9 +8,6 @@ Paint, Notepad, Explorer, and the 98.js desktop
 by Isaiah Odhner
 	https://github.com/1j01/98
 	https://github.com/1j01/jspaint
-
-Clippy by Smore:
-	https://github.com/smore-inc/clippy.js
 
 --------------------------------------
 Assets
@@ -25,6 +20,9 @@ respectively, in the United States and/or other countries, respectively.
 --------------------------------------
 Libraries
 =========-----------------------------
+
+98.js.org
+	https://github.com/1j01/98
 
 OS-GUI.js
 	https://os-gui.js.org

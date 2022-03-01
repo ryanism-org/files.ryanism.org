@@ -692,7 +692,7 @@ add_icon_not_via_filesystem({
 add_icon_not_via_filesystem({
     title: "Ryan's Documents",
     iconID: "my-documents-folder",
-    open: function() { systemExecuteFile("/my-documents"); },
+    open: function() { systemExecuteFile("/ryans-documents"); },
     // file_path: "/my-documents/",
     is_system_folder: true,
 });
@@ -720,7 +720,8 @@ add_icon_not_via_filesystem({
 add_icon_not_via_filesystem({
     title: "Ryan Explorer",
     iconID: "internet-explorer",
-    open: function() { Explorer("https://www.ryanism.org/"); }
+    open: function() { Explorer("https://www.ryanism.org/"); },
+    shortcut: true
 });
 add_icon_not_via_filesystem({
     title: "Paint",
