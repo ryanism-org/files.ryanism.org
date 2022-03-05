@@ -778,10 +778,58 @@ add_icon_not_via_filesystem({
     shortcut: true,
 });
 add_icon_not_via_filesystem({
+    title: "Blog",
+    iconID: "ryanism",
+    open: function() {
+        window.open("https://blog.ryanism.org", "_blank");
+    },
+    shortcut: true,
+});
+add_icon_not_via_filesystem({
     title: "GitHub",
     iconID: "github",
     open: function() {
         window.open("https://github.com/ryanism-org", "_blank");
+    },
+    shortcut: true,
+});
+add_icon_not_via_filesystem({
+    title: "Auroryanism",
+    iconID: "discord",
+    open: function() {
+        window.open("https://discord.gg/UUUYEPkNx3", "_blank");
+    },
+    shortcut: true,
+});
+add_icon_not_via_filesystem({
+    title: "State of Cheese",
+    iconID: "stateofcheese",
+    open: function() {
+        window.open("https://stateofcheese.ml", "_blank");
+    },
+    shortcut: true,
+});
+add_icon_not_via_filesystem({
+    title: "Channel Four News Playlist",
+    iconID: "ch4",
+    open: function() {
+        window.open("https://www.youtube.com/playlist?list=PLz9w79iFxNq9jFYT2Bz0Z8gxPj7GAdstV", "_blank");
+    },
+    shortcut: true,
+});
+add_icon_not_via_filesystem({
+    title: " Channel Four News Insta",
+    iconID: "instagram",
+    open: function() {
+        window.open("https://www.instagram.com/channel_four_news/", "_blank");
+    },
+    shortcut: true,
+});
+add_icon_not_via_filesystem({
+    title: " Pickle Snake Corp.",
+    iconID: "instagram",
+    open: function() {
+        window.open("https://www.instagram.com/pickle_snake_corporation/", "_blank");
     },
     shortcut: true,
 });
