@@ -737,6 +737,14 @@ add_icon_not_via_filesystem({
     open: Notepad,
     shortcut: true
 });
+add_icon_not_via_filesystem({
+    title: "Instagram",
+    iconID: "instagram",
+    open: function() {
+        window.open("https://www.instagram.com/the_church_of_ryanism/", "_blank");
+    },
+    shortcut: true,
+});
 
 folder_view.arrange_icons();
 
