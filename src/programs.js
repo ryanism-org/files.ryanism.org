@@ -777,6 +777,14 @@ add_icon_not_via_filesystem({
     },
     shortcut: true,
 });
+add_icon_not_via_filesystem({
+    title: "GitHub",
+    iconID: "github",
+    open: function() {
+        window.open("https://github.com/ryanism-org", "_blank");
+    },
+    shortcut: true,
+});
 
 folder_view.arrange_icons();
 
