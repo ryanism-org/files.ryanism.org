@@ -38,10 +38,26 @@
         <div class="taskbar-divider"></div>
         <div class="tray inset-shallow">
             <div class="tray-icons">
+                <img class="tray-icon" src="images/icons/task-scheduler-16x16.png" title="Quotes" onclick="getQuotes();">
             </div>
             <div class="taskbar-time" ondblclick="showMessageBox({iconID: 'info', message: 'Time to get an old clock!'})"></div>
         </div>
     </div>
+
+    <script>
+        async function getQuotes() {
+            await fetch("https://staticapi.ryanism.org/quotes/")
+                .then(res => res.json())
+                .then(json => {
+                    showMessageBox({
+                        iconID: 'info',
+                        message: json[Math.floor(Math.random() * json.length)]
+                    })
+                }).catch(error => {
+                    console.log(error);
+                });
+        }
+    </script>
 
     <script src="lib/jquery.min.js"></script>
     <script src="lib/browserfs.js"></script>
@@ -51,7 +67,7 @@
     <script src="lib/os-gui/$Window.js"></script>
     <script src="src/msgbox.js"></script>
     <script>
-        defaultMessageBoxTitle = "Windows";
+        defaultMessageBoxTitle = "Ryan";
     </script>
     <script src="src/3d-fun.js"></script>
     <script src="src/helpers.js"></script>
