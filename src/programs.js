@@ -723,25 +723,33 @@ add_icon_not_via_filesystem({
     title: "Ryan Explorer",
     iconID: "internet-explorer",
     open: function() { Explorer("https://www.ryanism.org/"); },
-    shortcut: true
+    shortcut: false
 });
 add_icon_not_via_filesystem({
     title: "Paint",
     iconID: "paint",
     open: Paint,
-    shortcut: true
+    shortcut: false
 });
 add_icon_not_via_filesystem({
     title: "Ryan-pad",
     iconID: "notepad",
     open: Notepad,
-    shortcut: true
+    shortcut: false
 });
 add_icon_not_via_filesystem({
     title: "Instagram",
     iconID: "instagram",
     open: function() {
         window.open("https://www.instagram.com/the_church_of_ryanism/", "_blank");
+    },
+    shortcut: true,
+});
+add_icon_not_via_filesystem({
+    title: "Reddit",
+    iconID: "reddit",
+    open: function() {
+        window.open("https://www.reddit.com/r/thechurchofryanism/", "_blank");
     },
     shortcut: true,
 });
