@@ -761,6 +761,14 @@ add_icon_not_via_filesystem({
     },
     shortcut: true,
 });
+add_icon_not_via_filesystem({
+    title: "TikTok",
+    iconID: "tiktok",
+    open: function() {
+        window.open("https://www.tiktok.com/@ryanism.org", "_blank");
+    },
+    shortcut: true,
+});
 
 folder_view.arrange_icons();
 
