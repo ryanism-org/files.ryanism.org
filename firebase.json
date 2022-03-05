@@ -5,5 +5,11 @@
             "firebase.json",
             "**/node_modules/**"
         ]
+    },
+    "emulators": {
+        "hosting": {
+            "port": 8081,
+            "host": "127.0.0.1"
+        }
     }
 }
