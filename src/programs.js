@@ -769,6 +769,14 @@ add_icon_not_via_filesystem({
     },
     shortcut: true,
 });
+add_icon_not_via_filesystem({
+    title: "Discord",
+    iconID: "discord",
+    open: function() {
+        window.open("https://discord.com/invite/AjZd9Y69RA", "_blank");
+    },
+    shortcut: true,
+});
 
 folder_view.arrange_icons();
 
