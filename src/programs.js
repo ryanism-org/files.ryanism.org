@@ -903,6 +903,6 @@ function iconsAtTwoSizes(iconID) {
 function openTab(url) {
     var newTab = window.open(url, "_blank");
     if (!newTab || newTab.closed || typeof newTab.closed == 'undefined') {
-        showMessageBox({ iconID: 'error', messageHTML: `Unable to open <a href="${url}" target="_blank">${url}</a> <br>Possible Pop-up Blocker Issue` });
+        showMessageBox({ iconID: 'error', messageHTML: `Unable to open <a href="${url}" target="_blank">${url}</a><br><br>(Possible Pop-up Blocker Issue)` });
     }
 }
