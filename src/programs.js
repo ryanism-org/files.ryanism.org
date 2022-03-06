@@ -753,6 +753,14 @@ add_icon_not_via_filesystem({
     shortcut: true,
 });
 add_icon_not_via_filesystem({
+    title: "JOIN TODAY!!!!",
+    iconID: "ryanism",
+    open: function() {
+        window.open("https://forms.gle/wrG27pxfioVvQTfB7", "_blank");
+    },
+    shortcut: true,
+});
+add_icon_not_via_filesystem({
     title: "Ryanism Quotes",
     iconID: "ryanism",
     open: function() {
