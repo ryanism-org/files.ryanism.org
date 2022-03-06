@@ -589,8 +589,7 @@ var file_extension_associations = {
     rsp: Notepad,
     sh: Notepad,
     ts: Notepad,
-    //TEMP FIX NOTEPAD ISSUE
-    txt: Explorer,
+    txt: Notepad,
     vcxproj: Notepad,
     webmanifest: Notepad,
     xml: Notepad,
@@ -603,16 +602,14 @@ var file_extension_associations = {
     gif: Paint,
     icns: Paint,
     ico: Paint,
-    //TEMP JSPAINT FIX
-    jpeg: Explorer,
-    jpg: Explorer,
+    jpeg: Paint,
+    jpg: Paint,
     kra: Paint,
     pbm: Paint,
     pdf: Paint, // yes I added PDF support to JS Paint (not all formats listed here are supported though)
     pdn: Paint,
     pgm: Paint,
-    //TEMP JSPAINT FIX
-    png: Explorer,
+    png: Paint,
     pnm: Paint,
     ppm: Paint,
     ps: Paint,
