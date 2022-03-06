@@ -753,6 +753,21 @@ add_icon_not_via_filesystem({
     shortcut: true,
 });
 add_icon_not_via_filesystem({
+    title: "Ryanism Quotes",
+    iconID: "ryanism",
+    open: function() {
+        Task(make_iframe_window({
+            src: "/programs/quotes/",
+            icons: iconsAtTwoSizes("ryanism"),
+            title: "Ryanism Quotes",
+            outerWidth: 835,
+            outerHeight: 500,
+            resizable: true,
+        }));
+    },
+    shortcut: true,
+});
+add_icon_not_via_filesystem({
     title: "Go Fund Me",
     iconID: "gofundme",
     open: function() {
