@@ -1,6 +1,8 @@
 
 # ![](images/icons/windows-update-32x32.png) [98.js](https://98.js.org)
 
+Hosted on [netlify.com](https://app.netlify.com/sites/ryanismfiles/overview)
+
 A web based Windows 98 desktop remake.
 
 Includes:
