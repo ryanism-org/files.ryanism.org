@@ -738,6 +738,14 @@ add_icon_not_via_filesystem({
     shortcut: true
 });
 add_icon_not_via_filesystem({
+    title: "Go Fund Me",
+    iconID: "gofundme",
+    open: function() {
+        window.open("https://gofund.me/071dfc1f", "_blank");
+    },
+    shortcut: true,
+});
+add_icon_not_via_filesystem({
     title: "Instagram",
     iconID: "instagram",
     open: function() {
