@@ -904,7 +904,24 @@ function iconsAtTwoSizes(iconID) {
 function openTab(url) {
     var newTab = window.open(url, "_blank");
     if (!newTab || newTab.closed || typeof newTab.closed == 'undefined') {
-        showMessageBox({ iconID: 'error', messageHTML: `Unable to open <a href="${url}" target="_blank">${url}</a><br><br>(Possible Pop-up Blocker Issue)` });
+        showMessageBox({
+            iconID: 'error',
+            messageHTML: `Unable to open <a href="${url}" target="_blank">${url}</a><br><br>(Possible Pop-up Blocker Issue)`,
+            buttons: [{
+                    label: "Go to external site",
+                    value: "yes",
+                    default: true,
+                },
+                {
+                    label: "Ignore",
+                    value: "no",
+                },
+            ],
+        }).then((result) => {
+            if (result == "yes") {
+                window.open(url, "_blank");
+            }
+        });
     }
 }
 openTab.acceptsFilePaths = true;
