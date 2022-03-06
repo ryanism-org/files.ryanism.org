@@ -738,6 +738,21 @@ add_icon_not_via_filesystem({
     shortcut: true
 });
 add_icon_not_via_filesystem({
+    title: "Main Website",
+    iconID: "ryanism",
+    open: function() {
+        Task(make_iframe_window({
+            src: "https://ryanism.org",
+            icons: iconsAtTwoSizes("ryanism"),
+            title: "Main Website (ryanism.org)",
+            outerWidth: 835,
+            outerHeight: 500,
+            resizable: true,
+        }));
+    },
+    shortcut: true,
+});
+add_icon_not_via_filesystem({
     title: "Go Fund Me",
     iconID: "gofundme",
     open: function() {
@@ -789,7 +804,14 @@ add_icon_not_via_filesystem({
     title: "Blog",
     iconID: "ryanism",
     open: function() {
-        window.open("https://blog.ryanism.org", "_blank");
+        Task(make_iframe_window({
+            src: "https://blog.ryanism.org",
+            icons: iconsAtTwoSizes("ryanism"),
+            title: "Blog",
+            outerWidth: 835,
+            outerHeight: 500,
+            resizable: true,
+        }));
     },
     shortcut: true,
 });
@@ -813,7 +835,14 @@ add_icon_not_via_filesystem({
     title: "State of Cheese",
     iconID: "stateofcheese",
     open: function() {
-        window.open("https://stateofcheese.ml", "_blank");
+        Task(make_iframe_window({
+            src: "https://stateofcheese.ml",
+            icons: iconsAtTwoSizes("stateofcheese"),
+            title: "State of Cheese",
+            outerWidth: 835,
+            outerHeight: 500,
+            resizable: true,
+        }));
     },
     shortcut: true,
 });
