@@ -614,7 +614,7 @@ var file_extension_associations = {
     ppm: Paint,
     ps: Paint,
     psd: Paint,
-    svg: Paint,
+    svg: openTab,
     tga: Paint,
     tif: Paint,
     tiff: Paint,
@@ -636,6 +636,7 @@ var file_extension_associations = {
     htm: Explorer,
     html: Explorer,
     url: openURLFile,
+    ttf: openTab
 };
 
 // Note: global systemExecuteFile called by explorer
@@ -906,3 +907,4 @@ function openTab(url) {
         showMessageBox({ iconID: 'error', messageHTML: `Unable to open <a href="${url}" target="_blank">${url}</a><br><br>(Possible Pop-up Blocker Issue)` });
     }
 }
+openTab.acceptsFilePaths = true;
