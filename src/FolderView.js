@@ -82,9 +82,8 @@ var file_extension_icons = {
 // base it more on the actual filesystem
 // @TODO: bring system folders, icons, and file associations into one place
 const system_folder_path_to_name = {
-	"/": "(C:)", //"My Computer",
-	"/my-pictures/": "My Pictures",
-	"/my-documents/": "My Documents",
+	"/": "Ryan's Computer", //"My Computer",
+	"/my-documents/": "Ryan's Documents",
 	"/network-neighborhood/": "Network Neighborhood",
 	"/desktop/": "Desktop",
 	"/programs/": "Program Files",
