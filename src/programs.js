@@ -753,7 +753,7 @@ add_icon_not_via_filesystem({
     title: "JOIN TODAY!!!!",
     iconID: "ryanism",
     open: function() {
-        window.open("https://forms.gle/wrG27pxfioVvQTfB7", "_blank");
+        openTab("https://forms.gle/wrG27pxfioVvQTfB7");
     },
     shortcut: true,
 });
@@ -776,7 +776,7 @@ add_icon_not_via_filesystem({
     title: "Go Fund Me",
     iconID: "gofundme",
     open: function() {
-        window.open("https://gofund.me/071dfc1f", "_blank");
+        openTab("https://gofund.me/071dfc1f");
     },
     shortcut: true,
 });
@@ -784,7 +784,7 @@ add_icon_not_via_filesystem({
     title: "Instagram",
     iconID: "instagram",
     open: function() {
-        window.open("https://www.instagram.com/the_church_of_ryanism/", "_blank");
+        openTab("https://www.instagram.com/the_church_of_ryanism/");
     },
     shortcut: true,
 });
@@ -792,7 +792,7 @@ add_icon_not_via_filesystem({
     title: "Reddit",
     iconID: "reddit",
     open: function() {
-        window.open("https://www.reddit.com/r/thechurchofryanism/", "_blank");
+        openTab("https://www.reddit.com/r/thechurchofryanism/");
     },
     shortcut: true,
 });
@@ -800,7 +800,7 @@ add_icon_not_via_filesystem({
     title: "Twitter",
     iconID: "twitter",
     open: function() {
-        window.open("https://twitter.com/ChurchofRyanism", "_blank");
+        openTab("https://twitter.com/ChurchofRyanism");
     },
     shortcut: true,
 });
@@ -808,7 +808,7 @@ add_icon_not_via_filesystem({
     title: "TikTok",
     iconID: "tiktok",
     open: function() {
-        window.open("https://www.tiktok.com/@ryanism.org", "_blank");
+        openTab("https://www.tiktok.com/@ryanism.org");
     },
     shortcut: true,
 });
@@ -816,7 +816,7 @@ add_icon_not_via_filesystem({
     title: "Discord",
     iconID: "discord",
     open: function() {
-        window.open("https://discord.com/invite/AjZd9Y69RA", "_blank");
+        openTab("https://discord.com/invite/AjZd9Y69RA");
     },
     shortcut: true,
 });
@@ -839,7 +839,7 @@ add_icon_not_via_filesystem({
     title: "GitHub",
     iconID: "github",
     open: function() {
-        window.open("https://github.com/ryanism-org", "_blank");
+        openTab("https://github.com/ryanism-org");
     },
     shortcut: true,
 });
@@ -847,7 +847,7 @@ add_icon_not_via_filesystem({
     title: "Auroryanism",
     iconID: "discord",
     open: function() {
-        window.open("https://discord.gg/UUUYEPkNx3", "_blank");
+        openTab("https://discord.gg/UUUYEPkNx3");
     },
     shortcut: true,
 });
@@ -870,7 +870,7 @@ add_icon_not_via_filesystem({
     title: "Channel Four News Playlist",
     iconID: "ch4",
     open: function() {
-        window.open("https://www.youtube.com/playlist?list=PLz9w79iFxNq9jFYT2Bz0Z8gxPj7GAdstV", "_blank");
+        openTab("https://www.youtube.com/playlist?list=PLz9w79iFxNq9jFYT2Bz0Z8gxPj7GAdstV");
     },
     shortcut: true,
 });
@@ -878,7 +878,7 @@ add_icon_not_via_filesystem({
     title: " Channel Four News Insta",
     iconID: "instagram",
     open: function() {
-        window.open("https://www.instagram.com/channel_four_news/", "_blank");
+        openTab("https://www.instagram.com/channel_four_news/");
     },
     shortcut: true,
 });
@@ -886,7 +886,7 @@ add_icon_not_via_filesystem({
     title: " Pickle Snake Corp.",
     iconID: "instagram",
     open: function() {
-        window.open("https://www.instagram.com/pickle_snake_corporation/", "_blank");
+        openTab("https://www.instagram.com/pickle_snake_corporation/");
     },
     shortcut: true,
 });
@@ -898,4 +898,11 @@ function iconsAtTwoSizes(iconID) {
         16: `images/icons/${iconID}-16x16.png`,
         32: `images/icons/${iconID}-32x32.png`,
     };
+}
+
+function openTab(url) {
+    var newTab = window.open(url, "_blank");
+    if (!newTab || newTab.closed || typeof newTab.closed == 'undefined') {
+        showMessageBox({ iconID: 'error', messageHTML: `Unable to open <a href="${url}" target="_blank">${url}</a> <br>Possible Pop-up Blocker Issue` });
+    }
 }
