@@ -92,6 +92,40 @@
         }
     </script>
 
+    <div class="start-menu outset-deep" hidden style="display: none; z-index: 5001;">
+        <div class="start-menu-titlebar"></div>
+        <div class="start-menu-content">
+            <ul>
+                <li>
+                    <a href='#' onclick='systemExecuteFile("/");close_start_menu();'><img class="start-icon" src="/images/icons/my-computer-16x16.png" width="16" height="16">Ryan's Computer</a>
+                </li>
+                <li>
+                    <a href='#' onclick='systemExecuteFile("/ryans-documents");close_start_menu();'><img class="start-icon" src="/images/icons/my-documents-folder-16x16.png" width="16" height="16">Ryan's Documents</a>
+                </li>
+                <li>
+                    <a href='#' onclick='systemExecuteFile("/network-neighborhood");close_start_menu();'><img class="start-icon" src="/images/icons/network-16x16.png" width="16" height="16">Network Neighborhood
+                    </a>
+                </li>
+                <li>
+                    <a href='#' onclick='systemExecuteFile("/Legends");close_start_menu();'><img class="start-icon" src="/images/icons/folder-legend-open-32x32.png" width="16" height="16">Legends</a>
+                </li>
+                <li>
+                    <a href='#' onclick='Explorer("www.ryanism.org");close_start_menu();'><img class="start-icon" src="/images/icons/internet-explorer-16x16.png" width="16" height="16">Ryan Explorer</a>
+                </li>
+                <li>
+                    <a href='#' onclick='Paint();close_start_menu();'><img class="start-icon" src="/images/icons/paint-16x16.png" width="16" height="16">Paint</a>
+                </li>
+                <li>
+                    <a href='#' onclick='Notepad();close_start_menu();'><img class="start-icon" src="/images/icons/notepad-16x16.png" width="16" height="16">Ryan-pad</a>
+                </li>
+                <li>
+                    <a href='#' onclick='Task(make_iframe_window({src:"https:/\/\/ryanism.org",icons:iconsAtTwoSizes("ryanism"),title:"Main Website (ryanism.org)",outerWidth:835,outerHeight:500,resizable:true,}));close_start_menu();'><img class="start-icon" src="/images/icons/ryanism-16x16.png" width="16" height="16">Main Website
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
     <script src="lib/jquery.min.js"></script>
     <script src="lib/browserfs.js"></script>
     <script src="lib/konami.js"></script>
