@@ -43,6 +43,15 @@
     margin: 5px 0;
 }
 
+.start-menu ul ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.start-menu ul ul li a {
+    width: calc(210px - 20px);
+}
+
 .start-menu li a {
     width: 210px;
     height: 20px;
