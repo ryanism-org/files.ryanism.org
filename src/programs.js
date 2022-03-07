@@ -885,7 +885,7 @@ add_icon_not_via_filesystem({
 });
 add_icon_not_via_filesystem({
     title: " Pickle Snake Corp.",
-    iconID: "instagram",
+    iconID: "picklesnake",
     open: function() {
         openTab("https://www.instagram.com/pickle_snake_corporation/");
     },
