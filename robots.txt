@@ -1,4 +1,8 @@
 User-Agent: *
 Disallow: /
 
+# Trying to only allow scans for the main page, nothing else
+Allow: /sitemap.xml
+Allow: /index.html
+
 Sitemap: /sitemap.xml
